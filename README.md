@@ -1,10 +1,6 @@
 # A Light and Fast Face Detector for Edge Devices
 **becauseofAI/lffd-pytorch had bugs in their code for face-detection and becauseofAI was not responding to issues. So this repo is uploaded after correcting the errors we faced when we tried testing over the WIDER-Face dataset. We trained the dataset for 2000000 intervals using CUDA 11.2 on Ubuntu 20.04. The testing phase includes code from becauseofAI/lffd-pytorch and YonghaoHe/LFFD-A-Light-and-Fast-Face-Detector-for-Edge-Devices,but we still faced errors as MXNet could not be installed in our system (MXNet is not available for CUDA 11.2 as of 11/03/21). So this repository is being uploaded in hope that someone can run it on thier system and provide this world with a working code of LFFD for face-detection :)**
 
-## Recent Update
-* `2019.10.14` The official PyTorch version of LFFD is first online. Now the repo is only preview version. Face detection code for v2 version is released nightly.
-* `2019.10.16` Now the face detection code for v2 version can train normally. The code of other tasks will be updated soon.
-
 ## Introduction
 This repo is the official PyTorch source code of paper "[LFFD: A Light and Fast Face Detector for Edge Devices](https://arxiv.org/abs/1904.10633)". Our paper presents a light and fast face detector (**LFFD**) for edge devices.
 LFFD considerably balances both accuracy and latency, resulting in small model size, fast inference speed while achieving excellent accuracy.
@@ -54,7 +50,7 @@ wrapper based on MXNet Module API for general one class detection.
 #### Installation
 1. Download the repo:
 ```
-git clone https://github.com/becauseofAI/lffd-pytorch.git
+git clone https://github.com/CNN-NISER/lffd-pytorch.git
 ```
 2. Refer to the corresponding sub-project for detailed usage. Now only the v2 version of [face_detection](face_detection) can be tried to train.
 
@@ -68,21 +64,3 @@ booktitle={arXiv:1904.10633},
 year={2019}
 }
 ```
-
-## To Do List
-- [ ] face detection
-- [ ] pedestrian detection
-- [ ] head detection
-- [ ] vehicle detection
-- [ ] license plate detection
-- [ ] [reconstruction version](https://github.com/becauseofAI/refinanet)
-
-## Contact
-becauseofAI<sup>[1]</sup>, Yonghao He<sup>[2]</sup>
-
-<sup>[1]</sup>E-mails: helloai777@gmail.com  
-<sup>[2]</sup>E-mails: yonghao.he@ia.ac.cn / yonghao.he@aliyun.com
-
-**If you are interested in this work, any innovative contributions are welcome!!!**
-
-**Internship is open at NLPR, CASIA all the time. Send me your resumes!**
